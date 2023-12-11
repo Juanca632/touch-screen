@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.main-container{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+/*       CONTAINER 1 ( IMG AND LOGO)                */
+
+.container1{
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.logo img{
+    height: 80%;
+}
+
+.img-battery{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img-battery div{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 50%;
+
+
+}
+.img-battery div h2{
+    font-weight: 700;
+    font-size: 80px;
+}
+.img-battery div h4{
+
+    font-weight: 600;
+    font-size:40px;
+
+}
+.img-battery img{
+    width: 60%;
+    
+}
+
+/*       CONTAINER 2 ( Battery Parameters)                */
+
+.container2{
+    background-color: rgb(222, 113, 76);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container2 .title{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 70%;
+    height: 40%;
+    text-align: center;
+}
+.container2 .title{
+    font-size:30px ;
+    border-bottom: solid 3px black;
+}
+.container2 .battery-params{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 60%;
+}
+.container2 .battery-params ul{
+    list-style: none;
+}
+.container2 .battery-params li{
+    font-size: 30px;
+}
+
+/*MEDIA QUERYS*/
+@media (max-width:1100px) {
+    .main-container{
+        flex-direction: row;
+    }
+    .container1{
+        width: 100%;
+    }
+    .container2{
+        width: 100%;
+    }
+}
+@media (max-height:900px) {
+    .img-battery{
+        justify-content: space-around;
+    }
+    .img-battery div{
+
+        height: 15%;
+    
+    }
+    .img-battery img{
+        width: 30%;
+        
+    }
+}
