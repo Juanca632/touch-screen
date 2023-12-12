@@ -83,22 +83,28 @@ body{
 }
 .container2 .title{
     display: flex;
-    justify-content: center;
-    align-items: end;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;   
     width: 70%;
-    height: 40%;
+    height: 45%;
     text-align: center;
 }
-.container2 .title{
-    font-size:30px ;
+
+.container2 .title h1{
+    font-size:60px ;
     border-bottom: solid 3px black;
+    margin: 0;
+}
+.container2 .title img{
+    width: 40%;
 }
 .container2 .battery-params{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 70%;
-    height: 60%;
+    height: 55%;
 }
 .container2 .battery-params ul{
     list-style: none;
