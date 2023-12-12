@@ -6,7 +6,9 @@ function startConnect(){
     
     client = new Paho.MQTT.Client(host,Number(port),clientID);
 
-    // client.onConnectionLost = onConnectionLost;
+    client.onConnectionLost = onConnectionLost;
+
+
 
     client.connect({
         onSuccess: onConnect
@@ -29,11 +31,8 @@ function onConnect(){
 
 
 function onConnectionLost(responseObject){
-    console.log("Hay un error de conexion")
-    // document.getElementById("messages").innerHTML += "<span> ERROR: Connection is lost.</span><br>";
-    // if(responseObject !=0){
-    //     document.getElementById("messages").innerHTML += "<span> ERROR:"+ responseObject.errorMessage +"</span><br>";
-    // }
+    console.log("Se perdio la conexion")
+    
 }
 
 function onMessageArrived(message){
