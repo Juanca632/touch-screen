@@ -102,12 +102,27 @@ body{
 }
 .container2 .battery-params ul{
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 20px;
 }
 .container2 .battery-params li{
     font-size: 30px;
+    margin:5px;
+
+}
+.mqtt-values{
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 0px 5px;
 }
 
-/*MEDIA QUERYS*/
+
+
+
+/*        MEDIA QUERYS            */
 @media (max-width:1100px) {
     .main-container{
         flex-direction: row;
