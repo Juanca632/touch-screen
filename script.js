@@ -62,11 +62,10 @@ function onMessageArrived(message){
             document.getElementById("temperature").innerHTML = payload;
     }
 
-    
-    // document.getElementById("messages").innerHTML += "<span> Topic:"+message.destinationName+"| Message : "+message.payloadString + "</span><br>";
-    // document.getElementById("messages").innerHTML += "<span> Subscribing to topic "+topic + "</span><br>";
-    
+}
 
+function bodyFunction() {
+    startConnect();
 }
 
 // function startDisconnect(){
@@ -90,3 +89,5 @@ function onMessageArrived(message){
 
 
 // }
+
+
