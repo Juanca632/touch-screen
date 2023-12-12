@@ -3,6 +3,9 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
+:root {
+    scroll-behavior: smooth;
+  }
 .main-container{
     display: flex;
     flex-direction:row;
