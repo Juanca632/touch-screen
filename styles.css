@@ -153,4 +153,9 @@ body{
         width: 30%;
         
     }
+
+    .container2 .title img{
+        width: 25%;
+    }
+
 }
