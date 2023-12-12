@@ -36,7 +36,7 @@ function onConnectionLost(responseObject){
 }
 
 function onMessageArrived(message){
-    console.log("OnMessageArrived: "+message.payloadString);
+    // console.log("OnMessageArrived: "+message.payloadString);
 
     var payload = message.payloadString;
 
@@ -61,6 +61,9 @@ function onMessageArrived(message){
     else if(message.destinationName === "battery/temperature"){
             document.getElementById("temperature").innerHTML = payload;
     }
+    else if(message.destinationName === "relay"){
+            document.getElementById("flexSwitchCheckDefault").innerHTML = payload;
+    }
 
 }
 
@@ -76,18 +79,25 @@ function bodyFunction() {
 
 
 // }
+let button_relay = 0
 
-// function publishMessage(){
-// msg = document.getElementById("Message").value;
-// topic = document.getElementById("topic_p").value;
+function publishMessage(){
+    topic = "relay";
+    // if(button_relay == 0){
+    //     button_relay = 1;
+    //     msg = 1;
+    // }
+    // else{
+    //     button_relay = 0;
+    //     msg = 0;
+    // }
+    console.log("hola");
+    msg = "On";
 
-// Message = new Paho.MQTT.Message(msg);
-// Message.destinationName = topic;
+    Message = new Paho.MQTT.Message(msg);
+    Message.destinationName = topic;
 
-// client.send(Message);
-// document.getElementById("messages").innerHTML += "<span> Message to topic "+topic+" is sent </span><br>";
-
-
-// }
+    client.send(Message);
+}
 
 

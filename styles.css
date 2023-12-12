@@ -128,7 +128,12 @@ body{
     padding: 0px 5px;
 }
 
-
+.form-check{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    
+}
 
 
 /*        MEDIA QUERYS            */
