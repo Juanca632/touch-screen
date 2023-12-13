@@ -42,22 +42,22 @@ function onMessageArrived(message){
 
     if(message.destinationName === "battery/voltage"){
         setTimeout(function () {
-            document.getElementById("voltage").innerHTML = payload;
+            document.getElementById("voltage").innerHTML = payload + " V";
         }, 500);
     }
     else if(message.destinationName === "battery/SOC"){
         setTimeout(function () {
-            document.getElementById("soc").innerHTML = payload;
+            document.getElementById("soc").innerHTML = payload + " %";
         }, 500);
     }
     else if(message.destinationName === "battery/SOH"){
         setTimeout(function () {
-            document.getElementById("soh").innerHTML = payload;
+            document.getElementById("soh").innerHTML = payload + " %";
         }, 500);
     }
     else if(message.destinationName === "battery/power"){
         setTimeout(function () {
-            document.getElementById("power").innerHTML = payload;
+            document.getElementById("power").innerHTML = payload + " kW";
         }, 500);
     }
     // else if(message.destinationName === "battery/capacity"){
@@ -67,12 +67,12 @@ function onMessageArrived(message){
     // }
     else if(message.destinationName === "battery/current"){
         setTimeout(function () {
-            document.getElementById("current").innerHTML = payload;
+            document.getElementById("current").innerHTML = payload + " A";
         }, 500);
     }
     else if(message.destinationName === "battery/temperature"){
         setTimeout(function () {
-            document.getElementById("temperature").innerHTML = payload;
+            document.getElementById("temperature").innerHTML = payload + " C°";
         }, 500);
     }
     else if(message.destinationName === "relay"){
