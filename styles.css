@@ -53,14 +53,17 @@ body{
 .img-battery div{
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content:space-around;
     width: 50%;
-
-
 }
+
 .img-battery div h2{
+    
     font-weight: 700;
-    font-size: 80px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    height: 50%;
 }
 .img-battery div h4{
 
@@ -71,6 +74,15 @@ body{
 .img-battery img{
     width: 60%;
     
+}
+
+.batteries{
+    display: flex;
+    flex-direction: row !important;
+    width: 60% !important;
+    margin: 0;
+    height: 50% !important;
+    justify-content: space-around;
 }
 
 /*       CONTAINER 2 ( Battery Parameters)                */
@@ -90,7 +102,7 @@ body{
     justify-content: flex-end;
     align-items: center;   
     width: 70%;
-    height: 45%;
+    height: 35%;
     text-align: center;
 }
 
@@ -107,7 +119,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 70%;
-    height: 55%;
+    height: 50%;
 }
 .container2 .battery-params ul{
     list-style: none;
@@ -166,12 +178,11 @@ body{
         width: 20%;
     }
     .container2 .title h1{
-        font-size: 50px;
+        font-size: 30px;
     }
     .container2 .battery-params li{
         font-size: 20px;
-        margin:5px;
-    
+        margin:2px;
     }
 
 }

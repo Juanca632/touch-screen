@@ -16,22 +16,29 @@
         <div class="container1">
             <div class="logo">
                 <img src="assets/logo.png"/>
-                <a href="#soc">CLICK</a>
+                <!-- <a href="#soc">CLICK</a> -->
                 
             </div>
             <div class="img-battery">
                 <div>
-                    <h2>OlenBox</h2>
-                    <h4>series</h4>
-                    <h2>L</h2>
+                    <h2>Merlin</h2>
+                    <h2>Touch - Screen</h2>
+                    <!-- <h4>series</h4> -->
                 </div>
-                <img src="assets/battery.png" />
+                <div class="batteries">
+                    <img src="assets/battery.png" />
+                    <img src="assets/battery2.png" style="width: 30vw !important;"/>
+
+                </div>
             </div>
         </div>
         <div class="container2">
             <div class="title">
                 <h1>Battery Parameters</h1>
                 <img src="assets/battery-charge.gif" alt="">
+            </div>
+            <div>
+                
             </div>
             <div class="battery-params">
                 <ul>
@@ -40,7 +47,7 @@
                     <li>SOC</li>
                     <li>SOH</li>
                     <li>Power</li>
-                    <li>Capacity</li>
+                    <!-- <li>Capacity</li> -->
                     <li>Voltage</li>
                     <li>Current</li>
                     <li>Temperature</li>
@@ -50,7 +57,7 @@
                     <li>=</li>
                     <li>=</li>
                     <li>=</li>
-                    <li>=</li>
+                    <!-- <li>=</li> -->
                     <li>=</li>
                     <li>=</li>
                     <li>=</li>
@@ -65,13 +72,17 @@
                     <li id="soc" class="mqtt-values">--</li>
                     <li id="soh" class="mqtt-values">--</li>
                     <li id="power" class="mqtt-values">--</li>
-                    <li id="capacity" class="mqtt-values">--</li>
+                    <!-- <li id="capacity" class="mqtt-values">--</li> -->
                     <li id="voltage" class="mqtt-values">--</li>
                     <li id="current" class="mqtt-values">--</li>
                     <li id="temperature" class="mqtt-values">--</li>
                   </ul>
                   
+                  
 
+            </div>
+            <div>
+                <button type="button" class="btn btn-light" onclick="moreParameters()">More parameters</button>
             </div>
             
         </div>

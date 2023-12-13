@@ -60,11 +60,11 @@ function onMessageArrived(message){
             document.getElementById("power").innerHTML = payload;
         }, 500);
     }
-    else if(message.destinationName === "battery/capacity"){
-        setTimeout(function () {
-            document.getElementById("capacity").innerHTML = payload;
-        }, 500);
-    }
+    // else if(message.destinationName === "battery/capacity"){
+    //     setTimeout(function () {
+    //         document.getElementById("capacity").innerHTML = payload;
+    //     }, 500);
+    // }
     else if(message.destinationName === "battery/current"){
         setTimeout(function () {
             document.getElementById("current").innerHTML = payload;
@@ -121,4 +121,6 @@ function publishMessage(){
     client.send(Message);
 }
 
-
+function moreParameters(){
+    window.location.href = "moreParameters/moreParameters.html";
+}
